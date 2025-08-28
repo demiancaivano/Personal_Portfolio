@@ -1,36 +1,127 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Portfolio de Demian Nicolás Caivano
 
-## Getting Started
+Portfolio profesional desarrollado con **Next.js 15** y **Tailwind CSS**, que muestra mis habilidades como desarrollador Full Stack especializado en React, Flask y PostgreSQL.
 
-First, run the development server:
+## 🚀 Características
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+- **Diseño Moderno**: Interfaz elegante y profesional con gradientes y animaciones
+- **Responsive**: Optimizado para dispositivos móviles y desktop
+- **Rendimiento**: Construido con Next.js para máxima velocidad
+- **SEO Optimizado**: Metadatos configurados para mejor posicionamiento
+- **Modo Oscuro**: Soporte automático para tema oscuro/claro
+- **Animaciones**: Efectos suaves con Framer Motion
+- **Formulario de Contacto**: Sistema de contacto funcional
+
+## 🛠️ Tecnologías Utilizadas
+
+### Frontend
+- **Next.js 15** - Framework de React
+- **TypeScript** - Tipado estático
+- **Tailwind CSS** - Framework de estilos
+- **Framer Motion** - Animaciones
+- **React Hook Form** - Manejo de formularios
+- **Lucide React** - Iconos
+
+### Herramientas de Desarrollo
+- **ESLint** - Linting de código
+- **Git** - Control de versiones
+- **Vercel** - Plataforma de despliegue
+
+## 📱 Secciones
+
+1. **Hero** - Presentación principal con call-to-actions
+2. **Sobre Mí** - Información profesional y habilidades técnicas
+3. **Proyectos** - Showcase del proyecto Dr_Shopper con detalles técnicos
+4. **Contacto** - Formulario de contacto e información de contacto
+
+## 🏗️ Estructura del Proyecto
+
+```
+demian-portfolio/
+├── src/
+│   ├── app/
+│   │   ├── globals.css
+│   │   ├── layout.tsx
+│   │   └── page.tsx
+│   └── components/
+│       ├── About.tsx
+│       ├── Contact.tsx
+│       ├── Footer.tsx
+│       ├── Hero.tsx
+│       ├── Navigation.tsx
+│       └── Projects.tsx
+├── public/
+├── package.json
+└── README.md
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🚀 Instalación y Uso
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Prerrequisitos
+- Node.js 18 o superior
+- npm o yarn
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### Pasos para ejecutar localmente
 
-## Learn More
+1. **Clonar el repositorio**
+```bash
+git clone [URL_DEL_REPOSITORIO]
+cd demian-portfolio
+```
 
-To learn more about Next.js, take a look at the following resources:
+2. **Instalar dependencias**
+```bash
+npm install
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+3. **Ejecutar en modo desarrollo**
+```bash
+npm run dev
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+4. **Abrir en el navegador**
+Visita [http://localhost:3000](http://localhost:3000)
 
-## Deploy on Vercel
+### Scripts Disponibles
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- `npm run dev` - Servidor de desarrollo
+- `npm run build` - Construir para producción
+- `npm run start` - Servidor de producción
+- `npm run lint` - Verificar código con ESLint
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 🌐 Despliegue
+
+Este proyecto está configurado para desplegarse automáticamente en **Vercel**:
+
+1. Conectar repositorio con Vercel
+2. Configurar variables de entorno (si aplica)
+3. Despliegue automático en cada push a main
+
+### URL de Producción
+[Será proporcionada una vez desplegado en Vercel]
+
+## 📄 Próximas Mejoras
+
+- [ ] Integración con CMS para gestión de contenido
+- [ ] Blog personal
+- [ ] Modo offline con Service Workers
+- [ ] Análiticas web
+- [ ] Optimización de imágenes
+- [ ] Tests automatizados
+- [ ] Internacionalización (i18n)
+
+## 📞 Contacto
+
+- **Email**: demian.caivano@gmail.com
+- **LinkedIn**: [linkedin.com/in/demiancaivano](https://www.linkedin.com/in/demiancaivano/)
+- **GitHub**: [Próximamente]
+
+## 📄 Licencia
+
+Este proyecto es de código abierto y está disponible bajo la [Licencia MIT](LICENSE).
+
+---
+
+⭐ **¡Si te gusta este proyecto, dale una estrella!**
+
+Desarrollado con ❤️ por Demian Nicolás Caivano
