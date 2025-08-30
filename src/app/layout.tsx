@@ -20,7 +20,7 @@ export const metadata: Metadata = {
   authors: [{ name: "Demian Nicolás Caivano", url: "mailto:demian.caivano@gmail.com" }],
   creator: "Demian Nicolás Caivano",
   publisher: "Demian Nicolás Caivano",
-  metadataBase: new URL('https://demian-portfolio.vercel.app'),
+  metadataBase: new URL('https://personal-portfolio-topaz-eight.vercel.app'),
   alternates: {
     canonical: '/',
   },
@@ -40,7 +40,7 @@ export const metadata: Metadata = {
     description: "Professional portfolio showcasing full-stack development projects including Dr_Shopper e-commerce platform. Specialized in React, Flask, and PostgreSQL.",
     type: "website",
     locale: "en_US",
-    url: "https://demian-portfolio.vercel.app",
+    url: "https://personal-portfolio-topaz-eight.vercel.app",
     siteName: "Demian Caivano Portfolio",
     images: [
       {

@@ -5,8 +5,8 @@ export default function StructuredData() {
     "name": "Demian Nicolás Caivano",
     "jobTitle": "Full Stack Developer",
     "description": "Professional Full Stack Developer specialized in React, Flask, and PostgreSQL. Creating modern web applications with cutting-edge technologies.",
-    "url": "https://demian-portfolio.vercel.app",
-    "image": "https://demian-portfolio.vercel.app/profile-photo.jpg",
+    "url": "https://personal-portfolio-topaz-eight.vercel.app",
+    "image": "https://personal-portfolio-topaz-eight.vercel.app/profile-photo.jpg",
     "email": "demian.caivano@gmail.com",
     "sameAs": [
       "https://github.com/demiancaivano",
