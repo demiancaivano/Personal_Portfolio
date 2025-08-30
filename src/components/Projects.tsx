@@ -1,8 +1,9 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import { ExternalLink, Github, ShoppingCart, Eye } from 'lucide-react';
+import { Github, Eye, Globe } from 'lucide-react';
 import { useState } from 'react';
+import Image from 'next/image';
 import ProjectModal from './ProjectModal';
 
 export default function Projects() {
@@ -44,15 +45,14 @@ export default function Projects() {
           <div className="grid lg:grid-cols-2 gap-0">
             {/* Project Image/Preview */}
             <div className="relative h-64 lg:h-full overflow-hidden bg-gray-200 dark:bg-gray-700">
-              <img
+              <Image
                 src="/dr-shopper-Landing.png"
-                alt="Dr_Shopper Landing Page"
+                alt="Dr_Shopper Landing Page - E-commerce platform screenshot"
+                width={600}
+                height={400}
                 className="w-full h-full object-cover object-left"
-                onError={(e) => {
-                  console.error('Error loading image:', e.currentTarget.src);
-                  e.currentTarget.style.display = 'none';
-                }}
-                onLoad={() => console.log('Image loaded successfully')}
+                sizes="(max-width: 768px) 100vw, 50vw"
+                loading="lazy"
               />
               {/* Overlay con información */}
               <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent flex items-end justify-start p-6">
@@ -70,12 +70,26 @@ export default function Projects() {
                   {project.title}
                 </h3>
                 <div className="flex space-x-3">
-                  <button className="p-2 bg-gray-100 dark:bg-gray-700 rounded-full hover:bg-gray-200 dark:hover:bg-gray-600 transition-colors">
-                    <Github className="w-5 h-5 text-gray-600 dark:text-gray-400" />
-                  </button>
-                  <button className="p-2 bg-blue-100 dark:bg-blue-900 rounded-full hover:bg-blue-200 dark:hover:bg-blue-800 transition-colors">
-                    <ExternalLink className="w-5 h-5 text-blue-600 dark:text-blue-400" />
-                  </button>
+                  <a 
+                    href="https://github.com/demiancaivano/Dr_Shopper" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="flex items-center gap-2 px-3 py-2 bg-gray-100 dark:bg-gray-700 rounded-lg hover:bg-gray-200 dark:hover:bg-gray-600 transition-colors text-sm font-medium text-gray-700 dark:text-gray-300"
+                    title="View source code on GitHub"
+                  >
+                    <Github className="w-4 h-4" />
+                    <span className="hidden sm:inline">Code</span>
+                  </a>
+                  <a 
+                    href="https://dr-shopper.onrender.com/" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="flex items-center gap-2 px-3 py-2 bg-blue-100 dark:bg-blue-900 rounded-lg hover:bg-blue-200 dark:hover:bg-blue-800 transition-colors text-sm font-medium text-blue-700 dark:text-blue-300"
+                    title="Visit live website"
+                  >
+                    <Globe className="w-4 h-4" />
+                    <span className="hidden sm:inline">Live Site</span>
+                  </a>
                 </div>
               </div>
 

@@ -2,6 +2,7 @@
 
 import { motion } from 'framer-motion';
 import { Github, Linkedin, Mail } from 'lucide-react';
+import Image from 'next/image';
 
 export default function Hero() {
   return (
@@ -16,10 +17,14 @@ export default function Hero() {
             className="flex-shrink-0"
           >
             <div className="w-80 h-80 rounded-full overflow-hidden shadow-2xl border-4 border-white dark:border-gray-800">
-              <img
+              <Image
                 src="/profile-photo.jpg"
                 alt="Demian Caivano - Full Stack Developer"
+                width={320}
+                height={320}
                 className="w-full h-full object-cover"
+                priority
+                sizes="(max-width: 768px) 240px, 320px"
               />
             </div>
           </motion.div>

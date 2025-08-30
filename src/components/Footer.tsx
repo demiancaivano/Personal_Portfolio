@@ -4,7 +4,6 @@ import { motion } from 'framer-motion';
 import { Code, Mail, Linkedin, Github } from 'lucide-react';
 
 export default function Footer() {
-  const currentYear = new Date().getFullYear();
 
   const socialLinks = [
     {

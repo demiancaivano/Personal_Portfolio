@@ -1,8 +1,9 @@
 'use client';
 
 import { motion, AnimatePresence } from 'framer-motion';
-import { X, ExternalLink, Github, ShoppingCart, CreditCard, Shield, Search, Star, Users } from 'lucide-react';
+import { X, Github, ShoppingCart, CreditCard, Shield, Search, Star, Users, Globe } from 'lucide-react';
 import { useState } from 'react';
+import Image from 'next/image';
 
 interface ProjectModalProps {
   isOpen: boolean;
@@ -121,12 +122,26 @@ export default function ProjectModal({ isOpen, onClose }: ProjectModalProps) {
                 </div>
               </div>
               <div className="flex items-center space-x-3">
-                <button className="p-2 bg-gray-100 dark:bg-gray-700 rounded-full hover:bg-gray-200 dark:hover:bg-gray-600 transition-colors">
-                  <Github className="w-5 h-5 text-gray-600 dark:text-gray-400" />
-                </button>
-                <button className="p-2 bg-blue-100 dark:bg-blue-900 rounded-full hover:bg-blue-200 dark:hover:bg-blue-800 transition-colors">
-                  <ExternalLink className="w-5 h-5 text-blue-600 dark:text-blue-400" />
-                </button>
+                <a 
+                  href="https://github.com/demiancaivano/Dr_Shopper" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-2 px-3 py-2 bg-gray-100 dark:bg-gray-700 rounded-lg hover:bg-gray-200 dark:hover:bg-gray-600 transition-colors text-sm font-medium text-gray-700 dark:text-gray-300"
+                  title="View source code on GitHub"
+                >
+                  <Github className="w-4 h-4" />
+                  View Code
+                </a>
+                <a 
+                  href="https://dr-shopper.onrender.com/" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-2 px-3 py-2 bg-blue-100 dark:bg-blue-900 rounded-lg hover:bg-blue-200 dark:hover:bg-blue-800 transition-colors text-sm font-medium text-blue-700 dark:text-blue-300"
+                  title="Visit live website"
+                >
+                  <Globe className="w-4 h-4" />
+                  Live Demo
+                </a>
                 <button
                   onClick={onClose}
                   className="p-2 bg-gray-100 dark:bg-gray-700 rounded-full hover:bg-gray-200 dark:hover:bg-gray-600 transition-colors"
@@ -142,22 +157,25 @@ export default function ProjectModal({ isOpen, onClose }: ProjectModalProps) {
               <div className="relative">
                 <div className="relative h-96 bg-gray-100 dark:bg-gray-800 rounded-lg overflow-hidden">
                   {images.map((image, index) => (
-                    <img
+                    <Image
                       key={index}
                       src={image}
-                      alt={`Dr_Shopper screenshot ${index + 1}`}
+                      alt={`Dr_Shopper screenshot ${index + 1} - E-commerce platform feature`}
+                      width={800}
+                      height={600}
                       className={`absolute inset-0 w-full h-full object-contain transition-all duration-300 ${
                         index === currentImageIndex 
                           ? 'opacity-100 cursor-pointer hover:scale-105' 
                           : 'opacity-0 pointer-events-none'
                       }`}
                       onClick={() => {
-                        console.log('Image clicked, index:', index, 'current:', currentImageIndex);
                         if (index === currentImageIndex) {
                           openImageModal(currentImageIndex);
                         }
                       }}
-                      title="Haz clic para ampliar la imagen"
+                      title="Click to enlarge image"
+                      loading="lazy"
+                      sizes="(max-width: 768px) 100vw, 800px"
                     />
                   ))}
                 </div>
@@ -198,9 +216,28 @@ export default function ProjectModal({ isOpen, onClose }: ProjectModalProps) {
               {/* Description */}
               <div>
                 <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-4">Project Overview</h3>
-                <p className="text-gray-700 dark:text-gray-300 leading-relaxed">
+                <p className="text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
                   {project.description}
                 </p>
+                
+                {/* Live Demo Link */}
+                <div className="bg-blue-50 dark:bg-blue-900/20 border border-blue-200 dark:border-blue-800 rounded-lg p-4">
+                  <div className="flex items-center justify-between">
+                    <div>
+                      <h4 className="font-semibold text-blue-900 dark:text-blue-200 mb-1">🌐 Live Demo</h4>
+                      <p className="text-blue-700 dark:text-blue-300 text-sm">Experience the full application in action</p>
+                    </div>
+                    <a 
+                      href="https://dr-shopper.onrender.com/" 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                      className="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg font-medium transition-colors inline-flex items-center gap-2"
+                    >
+                      <Globe className="w-4 h-4" />
+                      Visit Website
+                    </a>
+                  </div>
+                </div>
               </div>
 
               {/* Features */}
@@ -323,10 +360,14 @@ export default function ProjectModal({ isOpen, onClose }: ProjectModalProps) {
             </button>
             
             {/* Imagen ampliada */}
-            <img
+            <Image
               src={images[selectedImageIndex]}
-              alt={`Dr_Shopper screenshot ${selectedImageIndex + 1} ampliada`}
+              alt={`Dr_Shopper screenshot ${selectedImageIndex + 1} enlarged - E-commerce platform`}
+              width={1200}
+              height={800}
               className="max-w-full max-h-[95vh] object-contain"
+              loading="lazy"
+              sizes="95vw"
             />
             
             {/* Información de la imagen */}

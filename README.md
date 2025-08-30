@@ -1,40 +1,40 @@
-# Portfolio de Demian Nicolás Caivano
+# Demian Nicolás Caivano's Portfolio
 
-Portfolio profesional desarrollado con **Next.js 15** y **Tailwind CSS**, que muestra mis habilidades como desarrollador Full Stack especializado en React, Flask y PostgreSQL.
+Professional portfolio developed with **Next.js 15** and **Tailwind CSS**, showcasing my skills as a Full Stack developer specialized in React, Flask, and PostgreSQL.
 
-## 🚀 Características
+## 🚀 Features
 
-- **Diseño Moderno**: Interfaz elegante y profesional con gradientes y animaciones
-- **Responsive**: Optimizado para dispositivos móviles y desktop
-- **Rendimiento**: Construido con Next.js para máxima velocidad
-- **SEO Optimizado**: Metadatos configurados para mejor posicionamiento
-- **Modo Oscuro**: Soporte automático para tema oscuro/claro
-- **Animaciones**: Efectos suaves con Framer Motion
-- **Formulario de Contacto**: Sistema de contacto funcional
+- **Modern Design**: Elegant and professional interface with gradients and animations
+- **Responsive**: Optimized for mobile and desktop devices
+- **Performance**: Built with Next.js for maximum speed
+- **SEO Optimized**: Metadata configured for better ranking
+- **Dark Mode**: Automatic support for dark/light theme
+- **Animations**: Smooth effects with Framer Motion
+- **Contact Form**: Functional contact system
 
-## 🛠️ Tecnologías Utilizadas
+## 🛠️ Technologies Used
 
 ### Frontend
-- **Next.js 15** - Framework de React
-- **TypeScript** - Tipado estático
-- **Tailwind CSS** - Framework de estilos
-- **Framer Motion** - Animaciones
-- **React Hook Form** - Manejo de formularios
-- **Lucide React** - Iconos
+- **Next.js 15** - React Framework
+- **TypeScript** - Static typing
+- **Tailwind CSS** - Styling framework
+- **Framer Motion** - Animations
+- **React Hook Form** - Form management
+- **Lucide React** - Icons
 
-### Herramientas de Desarrollo
-- **ESLint** - Linting de código
-- **Git** - Control de versiones
-- **Vercel** - Plataforma de despliegue
+### Development Tools
+- **ESLint** - Code linting
+- **Git** - Version control
+- **Vercel** - Deployment platform
 
-## 📱 Secciones
+## 📱 Sections
 
-1. **Hero** - Presentación principal con call-to-actions
-2. **Sobre Mí** - Información profesional y habilidades técnicas
-3. **Proyectos** - Showcase del proyecto Dr_Shopper con detalles técnicos
-4. **Contacto** - Formulario de contacto e información de contacto
+1. **Hero** - Main presentation with call-to-actions
+2. **About Me** - Professional information and technical skills
+3. **Projects** - Dr_Shopper project showcase with technical details
+4. **Contact** - Contact form and contact information
 
-## 🏗️ Estructura del Proyecto
+## 🏗️ Project Structure
 
 ```
 demian-portfolio/
@@ -55,73 +55,73 @@ demian-portfolio/
 └── README.md
 ```
 
-## 🚀 Instalación y Uso
+## 🚀 Installation and Usage
 
-### Prerrequisitos
-- Node.js 18 o superior
-- npm o yarn
+### Prerequisites
+- Node.js 18 or higher
+- npm or yarn
 
-### Pasos para ejecutar localmente
+### Steps to run locally
 
-1. **Clonar el repositorio**
+1. **Clone the repository**
 ```bash
-git clone [URL_DEL_REPOSITORIO]
+git clone [REPOSITORY_URL]
 cd demian-portfolio
 ```
 
-2. **Instalar dependencias**
+2. **Install dependencies**
 ```bash
 npm install
 ```
 
-3. **Ejecutar en modo desarrollo**
+3. **Run in development mode**
 ```bash
 npm run dev
 ```
 
-4. **Abrir en el navegador**
-Visita [http://localhost:3000](http://localhost:3000)
+4. **Open in browser**
+Visit [http://localhost:3000](http://localhost:3000)
 
-### Scripts Disponibles
+### Available Scripts
 
-- `npm run dev` - Servidor de desarrollo
-- `npm run build` - Construir para producción
-- `npm run start` - Servidor de producción
-- `npm run lint` - Verificar código con ESLint
+- `npm run dev` - Development server
+- `npm run build` - Build for production
+- `npm run start` - Production server
+- `npm run lint` - Check code with ESLint
 
-## 🌐 Despliegue
+## 🌐 Deployment
 
-Este proyecto está configurado para desplegarse automáticamente en **Vercel**:
+This project is configured to deploy automatically on **Vercel**:
 
-1. Conectar repositorio con Vercel
-2. Configurar variables de entorno (si aplica)
-3. Despliegue automático en cada push a main
+1. Connect repository with Vercel
+2. Configure environment variables (if applicable)
+3. Automatic deployment on every push to main
 
-### URL de Producción
-[Será proporcionada una vez desplegado en Vercel]
+### Production URL
+[Will be provided once deployed on Vercel]
 
-## 📄 Próximas Mejoras
+## 📄 Future Improvements
 
-- [ ] Integración con CMS para gestión de contenido
-- [ ] Blog personal
-- [ ] Modo offline con Service Workers
-- [ ] Análiticas web
-- [ ] Optimización de imágenes
-- [ ] Tests automatizados
-- [ ] Internacionalización (i18n)
+- [ ] CMS integration for content management
+- [ ] Personal blog
+- [ ] Offline mode with Service Workers
+- [ ] Web analytics
+- [ ] Image optimization
+- [ ] Automated tests
+- [ ] Internationalization (i18n)
 
-## 📞 Contacto
+## 📞 Contact
 
 - **Email**: demian.caivano@gmail.com
 - **LinkedIn**: [linkedin.com/in/demiancaivano](https://www.linkedin.com/in/demiancaivano/)
-- **GitHub**: [Próximamente]
+- **GitHub**: [https://github.com/demiancaivano](https://github.com/demiancaivano)
 
-## 📄 Licencia
+## 📄 License
 
-Este proyecto es de código abierto y está disponible bajo la [Licencia MIT](LICENSE).
+This project is open source and available under the [MIT License](LICENSE).
 
 ---
 
-⭐ **¡Si te gusta este proyecto, dale una estrella!**
+⭐ **If you like this project, give it a star!**
 
-Desarrollado con ❤️ por Demian Nicolás Caivano
+Developed with ❤️ by Demian Nicolás Caivano
