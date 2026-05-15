@@ -14,7 +14,7 @@ export default function About() {
     {
       category: "Backend",
       icon: <Server className="w-6 h-6" />,
-      technologies: ["Flask", "Python", "Node.js", "Express.js", "REST APIs", "JWT"],
+      technologies: ["ASP.NET Core", "C#", ".NET", "Flask", "REST APIs", "JWT"],
       color: "from-green-500 to-emerald-500"
     },
     {
@@ -26,7 +26,7 @@ export default function About() {
     {
       category: "DevOps & Tools",
       icon: <Globe className="w-6 h-6" />,
-      technologies: ["Git", "Docker", "Render", "Vercel", "Linux", "Gunicorn"],
+      technologies: ["Git", "Docker", "Azure Static Web Apps", "Environment Configuration", "Linux", ".NET CLI"],
       color: "from-orange-500 to-red-500"
     }
   ];
@@ -67,13 +67,14 @@ export default function About() {
               <p className="text-gray-700 dark:text-gray-300 mb-4 leading-relaxed">
                 I&apos;m a passionate Full Stack Developer focused on creating modern and efficient web applications. 
                 My experience centers on developing complete solutions, from database design 
-                to implementing intuitive user interfaces.
+                to implementing intuitive user interfaces with scalable and maintainable architectures.
               </p>
 
               <p className="text-gray-700 dark:text-gray-300 mb-4 leading-relaxed">
-                I specialize in technologies like <strong>React</strong> for frontend, 
-                <strong> Flask</strong> for backend, and <strong>PostgreSQL</strong> for databases. 
-                I enjoy working on projects that combine robust functionality with exceptional user experiences.
+                Recently, I built <strong>TaskCraft</strong>, a full-stack project and task management platform with
+                role-based collaboration, Kanban workflows, and a service-layer backend architecture. I work with
+                <strong> React + TypeScript</strong> on the frontend and <strong>ASP.NET Core Web API</strong> for backend services,
+                while continuing to deliver production-ready solutions with strong API design and authentication patterns.
               </p>
 
               <div className="flex items-center space-x-4">
