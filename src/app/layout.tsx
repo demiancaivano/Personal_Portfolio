@@ -21,6 +21,11 @@ export const metadata: Metadata = {
   creator: "Demian Nicolás Caivano",
   publisher: "Demian Nicolás Caivano",
   metadataBase: new URL('https://demiancaivano.com'),
+  icons: {
+    icon: '/favicon.svg',
+    shortcut: '/favicon.svg',
+    apple: '/favicon.svg',
+  },
   alternates: {
     canonical: '/',
   },
